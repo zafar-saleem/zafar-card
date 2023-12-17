@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { GlobalStyles } from "@/theme/globals";
 import Providers from "./styled-providers";
+import GoogleAnalytics from './GoogleAnalytics';
 
 export const metadata: Metadata = {
   title: "Zafar Saleem | JavaScript | React | React Hooks | Redux | Node | Express | MongoDB",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body>
         <Providers>
           <GlobalStyles />
+          <GoogleAnalytics />
           {children}
         </Providers>
       </body>
