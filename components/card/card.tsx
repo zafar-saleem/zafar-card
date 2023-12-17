@@ -1,6 +1,7 @@
 import * as Styled from "./card.styled";
 import web1 from "./assets/web1.webp";
 import web2 from "./assets/web2.webp";
+import { NavItems } from "./nav-data";
 
 export const Card = ({ ...props }) => {
   return (
@@ -10,14 +11,13 @@ export const Card = ({ ...props }) => {
       <Styled.Subheader>{props.subtitle}</Styled.Subheader>
       <Styled.Separator />
       <Styled.Container>
-        <Styled.Lynk href="https://zafarsaleem.medium.com">
-          Blog
-        </Styled.Lynk> |
-        <Styled.Lynk href="https://www.linkedin.com/in/zeesaleem">Linkedin</Styled.Lynk> |
-        <Styled.Lynk href="https://github.com/zafar-saleem">Github</Styled.Lynk> |
-        <Styled.Lynk href="https://gitlab.com/zsaleem">Gitlab</Styled.Lynk> |
-        <Styled.Lynk href="https://www.dropbox.com/scl/fi/pvn69vtd9h61g33ns8iwg/CV.pdf?rlkey=j6os79uyni7bxxd881dh6msdv&dl=0">CV</Styled.Lynk> |
-        <Styled.Lynk href="https://gist.github.com/zafar-saleem/c194969fc6c6994b3bbf6df8c46aab61" style={{ zIndex: 1}}>Skills</Styled.Lynk>
+        {
+          NavItems.map((item: { path: string; label: string}, index: number) => (
+            <span key={`${item.path}-${index}`}>
+              <Styled.Lynk href={item.path}>{item.label}</Styled.Lynk>{index >= NavItems.length - 1 ? null : ` |` }
+            </span>
+          ))
+        }
       </Styled.Container>
       <Styled.Footer>zafarsaleem3@gmail.com</Styled.Footer>
       <Styled.Web2 src={web2} width={184} height={178} alt="Zafar Card Web" />
