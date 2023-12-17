@@ -2,7 +2,6 @@
 
 import { Card } from "@/components/card";
 import { Center } from "@/components/center";
-import { motion } from "framer-motion";
 import React from "react";
 
 export default function Home() {
