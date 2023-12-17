@@ -16,7 +16,7 @@ export const Card = ({ ...props }) => {
         <Styled.Lynk href="https://www.linkedin.com/in/zeesaleem">Linkedin</Styled.Lynk> |
         <Styled.Lynk href="https://github.com/zafar-saleem">Github</Styled.Lynk> |
         <Styled.Lynk href="https://gitlab.com/zsaleem">Gitlab</Styled.Lynk> |
-        <Styled.Lynk href="https://www.dropbox.com/scl/fi/u12ek6h98lfng80m9ngr7/CV.pdf?rlkey=tue5iigad6qgyqxk62g759f8i&dl=0">CV</Styled.Lynk> |
+        <Styled.Lynk href="https://www.dropbox.com/scl/fi/pvn69vtd9h61g33ns8iwg/CV.pdf?rlkey=j6os79uyni7bxxd881dh6msdv&dl=0">CV</Styled.Lynk> |
         <Styled.Lynk href="https://gist.github.com/zafar-saleem/c194969fc6c6994b3bbf6df8c46aab61" style={{ zIndex: 1}}>Skills</Styled.Lynk>
       </Styled.Container>
       <Styled.Footer>zafarsaleem3@gmail.com</Styled.Footer>
