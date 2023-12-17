@@ -94,11 +94,9 @@ export const Web1 = styled(Image)`
   height: 100px;
 `;
 
-export const Lynk = styled(Link)`
-  a {
-    &:hover {
-      text-decoration: underline;
-    }
+export const Lynk = styled.a`
+  &:hover {
+    text-decoration: underline;
   }
 `;
 
