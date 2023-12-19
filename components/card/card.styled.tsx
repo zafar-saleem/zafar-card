@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Card = styled.div`
   position: relative;
@@ -60,9 +60,40 @@ export const Card = styled.div`
   }
 `;
 
+const animation = css`
+  @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+`;
+
 export const Header = styled.h1`
   padding: 0;
   margin: 0;
+
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
+
+  ${animation};
 `;
 
 export const Subheader = styled.h2`
@@ -70,6 +101,9 @@ export const Subheader = styled.h2`
   margin: 0;
   font-size: 1rem;
   font-weight: 500;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+
+  ${animation};
 `;
 
 export const Separator = styled.div`
