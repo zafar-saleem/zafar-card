@@ -17,45 +17,14 @@ export const Card = styled.div`
 
   @keyframes entrance {
     0% {
-      animation-timing-function: ease-in;
+      transform: translateY(-600px) rotateX(-30deg) scale(0);
+      transform-origin: 50% 100%;
       opacity: 0;
-      transform: translateY(-250px);
     }
-  
-    38% {
-      animation-timing-function: ease-out;
-      opacity: 1;
-      transform: translateY(0);
-    }
-  
-    55% {
-      animation-timing-function: ease-in;
-      transform: translateY(-65px);
-    }
-  
-    72% {
-      animation-timing-function: ease-out;
-      transform: translateY(0);
-    }
-  
-    81% {
-      animation-timing-function: ease-in;
-      transform: translateY(-28px);
-    }
-  
-    90% {
-      animation-timing-function: ease-out;
-      transform: translateY(0);
-    }
-  
-    95% {
-      animation-timing-function: ease-in;
-      transform: translateY(-8px);
-    }
-  
     100% {
-      animation-timing-function: ease-out;
-      transform: translateY(0);
+      transform: translateY(0) rotateX(0) scale(1);
+      transform-origin: 50% 1400px;
+      opacity: 1;
     }
   }
 `;
