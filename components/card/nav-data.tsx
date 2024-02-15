@@ -17,7 +17,7 @@ export const NavItems = [
   },
   {
     label: "CV",
-    path: "https://www.dropbox.com/scl/fi/pvn69vtd9h61g33ns8iwg/CV.pdf?rlkey=j6os79uyni7bxxd881dh6msdv&dl=0",
+    path: "https://www.dropbox.com/scl/fi/tvrgdgcizqui9lsoln4x5/CV.pdf?rlkey=z45cyo1i1ttna1pvtej52fm28&dl=0",
   },
   {
     label: "Skills",
