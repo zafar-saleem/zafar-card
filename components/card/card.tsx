@@ -14,9 +14,16 @@ export const Card = ({ ...props }) => {
         {
           NavItems.map((item: { path: string; label: string}, index: number) => (
             <span key={`${item.path}-${index}`}>
-              <Styled.Lynk href={item.path}>{item.label}</Styled.Lynk>{index >= NavItems.length - 1 ? null : ` |` }
+              <Styled.Lynk href={item.path}>{item.label}</Styled.Lynk> |
             </span>
           ))
+        }
+        {
+          props.searchParams.portfolio
+          ?
+          <Styled.Lynk href="https://www.dropbox.com/scl/fi/8y5yqq2t9i28ypz4z42n4/portfolio.pdf?rlkey=znin21d5bnqkznrsoggig8gqp&dl=0">Portfolio</Styled.Lynk>
+          :
+          <Styled.Lynk href="https://www.dropbox.com/scl/fi/tvrgdgcizqui9lsoln4x5/CV.pdf?rlkey=z45cyo1i1ttna1pvtej52fm28&dl=0">CV</Styled.Lynk>
         }
       </Styled.Container>
       <Styled.Footer>zafarsaleem3@gmail.com</Styled.Footer>
