@@ -23,7 +23,7 @@ export const Card = ({ ...props }) => {
           ?
           <Styled.Lynk href="https://www.dropbox.com/scl/fi/8y5yqq2t9i28ypz4z42n4/portfolio.pdf?rlkey=znin21d5bnqkznrsoggig8gqp&dl=0">Portfolio</Styled.Lynk>
           :
-          <Styled.Lynk href="https://www.dropbox.com/scl/fi/9ttf2o90r59p7d2xrer3f/CV.pdf?rlkey=vbdmogb6n6b03nnmce7r5n6lx&dl=0">CV</Styled.Lynk>
+          <Styled.Lynk href="https://www.dropbox.com/scl/fi/49flt2obtrl4u0fen7x42/CV.pdf?rlkey=u46v8x8u3aqydnyi4rf2v9asz&dl=0">CV</Styled.Lynk>
         }
       </Styled.Container>
       <Styled.Footer>zafarsaleem3@gmail.com</Styled.Footer>
