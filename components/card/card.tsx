@@ -25,6 +25,7 @@ export const Card = ({ ...props }) => {
           :
           <Styled.Lynk href="https://www.dropbox.com/scl/fi/49flt2obtrl4u0fen7x42/CV.pdf?rlkey=u46v8x8u3aqydnyi4rf2v9asz&dl=0">CV</Styled.Lynk>
         }
+        <Styled.Lynk href="https://instagram.com/zafar.fotos/" className="social">| Instagram</Styled.Lynk>
       </Styled.Container>
       <Styled.Footer>zafarsaleem3@gmail.com</Styled.Footer>
       <Styled.Web2 src={web2} width={184} height={178} alt="Zafar Card Web" />

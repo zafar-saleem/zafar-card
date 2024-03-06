@@ -101,6 +101,12 @@ export const Lynk = styled.a`
   &:hover {
     text-decoration: underline;
   }
+
+  &.social {
+    @media screen and (max-width: ${props => props.theme.breakpoints.s}) {
+      display: none;
+    }
+  }
 `;
 
 export const Web2 = styled(Image)`
